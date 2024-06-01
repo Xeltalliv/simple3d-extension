@@ -217,4 +217,82 @@ const links = [
 			},
 		]
 	},
+	{
+		"name": "Animated textures",
+		"dir": "meshTextureAnimated",
+		"links": [
+			{
+				"title": "Changing texture directly (DON'T DO THIS!)",
+				"file": "uploadEveryFrame"
+			},
+			{
+				"title": "Pre-creating multiple meshes that all inherit from the same base mesh",
+				"file": "inheritShapeCustomTexture"
+			},
+			{
+				"title": "Storing textures in meshes and using inheritance to switch between textures",
+				"file": "inheritTexture"
+			},
+			{
+				"title": "Directly changing UV offset",
+				"file": "directUVoffset"
+			},
+			{
+				"title": "Inherited UV offset",
+				"file": "inheritUVoffset"
+			},
+		]
+	},
+	{
+		"name": "Common mistakes while loading textures",
+		"dir": "meshTextureLoading",
+		"links": [
+			{
+				"title": "Blocked by CORS",
+				"file": "textureCORS"
+			},
+			{
+				"title": "What is [texture data] anyways?",
+				"file": "texturePassing"
+			},
+		]
+	},
+	{
+		"name": "Simple3D + Skins extension",
+		"dir": "extSkins",
+		"links": [
+			{
+				"title": "Simple text skins",
+				"file": "textSimple"
+			},
+			{
+				"title": "Textured text skins with gradient",
+				"file": "textTextured"
+			},
+			{
+				"title": "Turning 2D costumes into pre-rendered 3D block skins",
+				"file": "blocks"
+			},
+		]
+	},
+	{
+		"name": "Simple3D + Pen+ extension",
+		"dir": "extPenPlus",
+		"links": [
+			{
+				"title": "Using transformation blocks with Pen+ v7 shaders",
+				"file": "v7"
+			},
+			{
+				"title": "Using transformation blocks with Pen+ v6 textured triangle blocks",
+				"file": "v6"
+			},
+		]
+	},
+	{
+		"name": "Simple3D + Augmented Reality extension",
+		"dir": "extAR",
+		"links": [
+		]
+	}
 ];
