@@ -258,6 +258,28 @@ const links = [
 		]
 	},
 	{
+		"name": "Modifying parts of the mesh lists",
+		"dir": "partialUpdate",
+		"links": [
+			{
+				"title": "Updating vertex data",
+				"file": "vertex1"
+			},
+			{
+				"title": "Updating vertex index data",
+				"file": "index1"
+			},
+			{
+				"title": "Updating instance data",
+				"file": "instance1"
+			},
+			{
+				"title": "Inserting and removing triangles example",
+				"file": "index2"
+			},
+		]
+	},
+	{
 		"name": "Simple3D + Skins extension",
 		"dir": "extSkins",
 		"links": [
