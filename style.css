@@ -45,3 +45,21 @@ body {
 		transform: translate3d(-480px, -48px, 0);
 	}
 }
+
+.content {
+	display: block;
+}
+
+.content-focus {
+	background-color: #ffcc00;
+	padding: 10px;
+	margin: -10px;
+	border-radius: 10px;
+}
+
+.a-focus {
+	background-color: #ffcc00;
+	padding: 2px;
+	margin: -2px;
+	border-radius: 2px;
+}
