@@ -1,11 +1,11 @@
-const hash = location.hash.substring(1);
+const hash = location.hash ? location.hash.substring(1).split(",") : [];
 const main = document.getElementById("content");
 main.textContent = "";
 for(const category of links) {
 	const content = document.createElement("a");
 	content.id = category.dir;
 	content.classList.add("content");
-	if (hash == category.dir) content.classList.add("content-focus");
+	if (hash.includes(category.dir)) content.classList.add("content-focus");
 	const header = document.createElement("h2");
 	header.style.margin = "0";
 	header.textContent = category.name;
@@ -19,7 +19,7 @@ for(const category of links) {
 		a.target = "_blank";
 		a.rel = "noopener noreferrer";
 		a.id = `${category.dir}/${link.file}`;
-		if (hash == `${category.dir}/${link.file}`) a.classList.add("a-focus");
+		if (hash.includes(`${category.dir}/${link.file}`)) a.classList.add("a-focus");
 		const br = document.createElement("br");
 		content.append(a, br);
 	}
