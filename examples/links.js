@@ -17,6 +17,10 @@ const links = [
 				"title": "Creating and deleting",
 				"file": "mesh"
 			},
+			{
+				"title": "What happens when you create mesh that exists?",
+				"file": "meshReplace"
+			},
 		]
 	},
 	{
@@ -51,6 +55,10 @@ const links = [
 				"title": "Interrupting traingle strips/fans, line strips/loops",
 				"file": "shapeRestartIndex"
 			},
+			{
+				"title": "Reusing lists",
+				"file": "shapeRepurposeLists"
+			},
 		]
 	},
 	{
@@ -68,8 +76,18 @@ const links = [
 		]
 	},
 	{
-		"name": "Common mistakes that make meshes undrawable",
-		"dir": "meshMistakes",
+		"name": "Nothing is drawn",
+		"dir": "meshNothing",
+		"links": [
+			{
+				"title": "Forgetting about depth",
+				"file": "forgotDepth"
+			},
+		]
+	},
+	{
+		"name": "Mesh is not valid for drawing",
+		"dir": "meshNotValid",
 		"links": [
 			{
 				"title": "Missing vertex positions",
@@ -218,11 +236,61 @@ const links = [
 		]
 	},
 	{
+		"name": "Text rendering",
+		"dir": "textureText",
+		"links": [
+			{
+				"title": "Starting with simple text",
+				"file": "text1"
+			},
+			{
+				"title": "Fixing upsidedown and aspect ratio",
+				"file": "text2"
+			},
+			{
+				"title": "Changing resolutions changes text scale",
+				"file": "text3"
+			},
+			{
+				"title": "Solving the issue, but text is small now",
+				"file": "text4"
+			},
+			{
+				"title": "Re-adding scaling",
+				"file": "text5"
+			},
+			{
+				"title": "Centering text with move block",
+				"file": "centered1"
+			},
+			{
+				"title": "Centering text by changing mesh to be centered",
+				"file": "centered2"
+			},
+			{
+				"title": "Un-centering centered mesh",
+				"file": "centered3"
+			},
+			{
+				"title": "Increasing resolution to make text less blurry",
+				"file": "edges1"
+			},
+			{
+				"title": "Better solution for sharp text edges",
+				"file": "edges2"
+			},
+			{
+				"title": "It's also useful for vegetation",
+				"file": "edges3"
+			},
+		]
+	},
+	{
 		"name": "Animated textures",
 		"dir": "meshTextureAnimated",
 		"links": [
 			{
-				"title": "Changing texture directly (DON'T DO THIS!)",
+				"title": "Changing texture directly (AVOID THIS!)",
 				"file": "uploadEveryFrame"
 			},
 			{
