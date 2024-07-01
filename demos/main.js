@@ -14,7 +14,7 @@ for(const project of projects) {
 	description.classList.add("project-description");
 	title.classList.add("project-title");
 
-	const url = `https://turbowarp.org/editor?project_url=${location.href}projects/${project.file}.sb3`;
+	const url = `https://turbowarp.org/?project_url=${location.href}projects/${project.file}.sb3`;
 	imgA.href = url;
 	titleA.href = url;
 	imgA.target = "_blank";
