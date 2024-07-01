@@ -6,12 +6,12 @@ const projects = [
 	},
 	{
 		"title": "Grassy field during rain",
-		"description": "Demo with 400k waving blades of grass with fake reflections and 10k animated rain droplets using instaced rendering.",
+		"description": "Demo with 400k waving blades of grass with fake reflections and 10k moving rain droplets using instaced rendering.",
 		"file": "GrassRainy"
 	},
 	{
 		"title": "100k Particles",
-		"description": "100k instanced paricles, with colors and 8 frames of animation. Physics and animation are done by the project and the resulting lists are streamed into the extension.",
+		"description": "100k instanced particles, with colors and 8 frames of animation. Physics and animation are done by the project and the resulting lists are streamed into the extension.",
 		"file": "InstancedParticlesUV"
 	},
 	{
