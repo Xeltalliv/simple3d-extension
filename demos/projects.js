@@ -50,6 +50,11 @@ const projects = [
 		"file": "Walking2"
 	},
 	{
+		"title": "Extension image",
+		"description": "The extension thumbnail was made using this project.",
+		"file": "ExtensionThumbnail"
+	},
+	{
 		"title": "Cubemap rendering",
 		"description": "You are actually inside of a cubemap that moves with you. Unless you hold space.",
 		"file": "Cubemap"
