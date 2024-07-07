@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+	<head>
+		<title>About Simple3D</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="scratch, turbowarp, extension, simple3D">
+		<meta name="description" content="The main page of additional resources for Simple3D extension for TurboWarp">
+		<link rel="stylesheet" href="../style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="sliding-background"></div>
+		</div>
+		<div class="middle">
+			<h1 class="title">About Simple3D</h1>
+			<div id="content">
+				<p>Simple3D is an extension for TurboWarp that provides a graphics API for making visually simple GPU accelerated 3D and 2D projects.
+				By limiting the scope of the extension, the goal is to make it a perfect extension for the projects that need this type of 3D,
+				instead of trying to do a bit of everything poorly. A big part of that is providing features to let (or force) projects to be made in optimized ways,
+				even if they come at an expense of making extension more confusing and difficult to use.
+				<p>Design goals:</p>
+				<ul>
+					<li>
+						<p>
+							<strong>Simple3D is only meant for rendering.</strong><br>
+							This means no collison, physics, pathfinding, etc. is supported or will ever be added.
+							In most cases those things are implemented independently from rendering, using much simpler shapes and different representation in memory, 
+							so there is no reason to tie them to rendering.
+							Simple3D doesn't even store mesh geometry in RAM, only in VRAM, which CPU doesn't have fast access to.
+							Collision is done on CPU and requires storing data in RAM.
+							This means that you have a freedom of choice to do collision in any way you like, either by using scratch code or any other extension.
+							And regardless of what you choose, you will not be wasting RAM by storing duplicate data.
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>Simple3D is only meant for simple looking 3D graphics.</strong><br>
+							This means no shaders, lighting, PBR maps, volumetrics, bloom, etc. are planned for this extension.
+							This is in fact the main reason why it is called Simple3D, not because it is simple to learn or use.
+							This also leaves room for possible future extensions like Advanced3D with shaders (do everything yourself) or
+							Realistic3D with many of those effects built-in.
+							There are currently no plans to make those extensions.
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>Simple3D is a graphics API, not a 3D Engine.</strong><br>
+							Simple3D does not keep track of objects, cameras, etc.
+							The project that uses extension is responsible for keeping track of all of that.
+							The extension has no clue of where everything is, as the only thing it receives from the project
+							is the constant stream of drawing commands, that it just sequentially executes.
+							Projects don't have to use 3 trasformations in the intended predicatable ways,
+							so Simple3D cannot even determine what type of projection with which settings the project is using.
+							That is why occlusion culling and frustum culling are not done by the extension.
+							It's responsibility of the project and only the project knows neccessary information to perform it.
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>Simple3D is also meant for 2D projects and image processing.</strong><br>
+							Despite it's name, it can also just as easily be used to make fully 2D projects
+							with some more advanced rendering effects than what is possible with normal scratch,
+							or processing images by resizing, rotating, cropping, recoloring, combining, cutting out, adding text, etc.
+							For processing images, extension provides ways to import images from URLs, data URIs, lists of pixel colors, costumes
+							as well as ways to export resulting images as data URIs or lists of pixel colors,
+							making results usable with both other extensions (like Skins) and scratch code.
+						</p>
+					</li>
+				</ul>
+				<p>Referring to this extension as "Simple3D" is preferred over "Simple 3D".</p>
+			</div>
+			<a href="../">&lt; Main page</a>
+		</div>
+	</body>
+</html>
