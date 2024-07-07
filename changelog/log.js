@@ -1,5 +1,13 @@
 const log = [
 	{
+		"version": "v1.0.4",
+		"pr": "https://github.com/TurboWarp/extensions/pull/1593",
+		"changes": [
+			"Added \"Open extra resources\" button",
+			"Added 2 new comments to sample project",
+		],
+	},
+	{
 		"version": "v1.0.3",
 		"pr": "https://github.com/TurboWarp/extensions/pull/1500",
 		"changes": [
