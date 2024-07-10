@@ -36,7 +36,7 @@ const projects = [
 	},
 	{
 		"title": "Point Lighting 2",
-		"description": "Same as Point Lighting 1 except rendering to wall textures.",
+		"description": "Same as Point Lighting 1 except rendering to wall textures. Also remake of another Pen+ V7 demo by ObviousAlexC.",
 		"file": "PenPlusRemakeFramebuffer"
 	},
 	{

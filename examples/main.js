@@ -1,4 +1,6 @@
 const hash = location.hash ? location.hash.substring(1).split(",") : [];
+const myUrl = new URL(location.href);
+myUrl.hash = "";
 const main = document.getElementById("content");
 main.textContent = "";
 for(const category of links) {
@@ -14,7 +16,7 @@ for(const category of links) {
 	main.append(content, footer);
 	for(const link of category.links) {
 		const a = document.createElement("a");
-		a.href = `https://turbowarp.org/editor?project_url=${location.href}projects/${category.dir}/${link.file}.sb3`;
+		a.href = `https://turbowarp.org/editor?project_url=${myUrl.href}projects/${category.dir}/${link.file}.sb3`;
 		a.textContent = link.title;
 		a.target = "_blank";
 		a.rel = "noopener noreferrer";

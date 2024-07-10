@@ -11,7 +11,7 @@ const log = [
 		"version": "v1.0.3",
 		"pr": "https://github.com/TurboWarp/extensions/pull/1500",
 		"changes": [
-			"Fixed [set [NAME] vertex draw range (FROM) (TO)] block",
+			"Fixed [set [NAME] vertex draw range from (FROM) to (TO)] block",
 			"Added popup when extension is packaged incorrectly",
 			"Fixed instance XY positions",
 			"Fixed font block incorrect ArgumentType",
