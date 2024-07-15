@@ -59,4 +59,9 @@ const projects = [
 		"description": "You are actually inside of a cubemap that moves with you. Unless you hold space.",
 		"file": "Cubemap"
 	},
+	{
+		"title": "Conway's Game of Life",
+		"description": "Simulates it on 2048x2048 grid on GPU.",
+		"file": "ConwaysGameOfLife"
+	},
 ];
