@@ -56,12 +56,12 @@ const projects = [
 	},
 	{
 		"title": "Cubemap rendering",
-		"description": "You are actually inside of a cubemap that moves with you. Unless you hold space.",
+		"description": "You are inside of a cubemap that moves with you, unless you hold space.",
 		"file": "Cubemap"
 	},
 	{
 		"title": "Conway's Game of Life",
-		"description": "Simulates it on 2048x2048 grid on GPU.",
+		"description": "Running entirely on GPU on 1024x1024 grid. Uses render to texture, blending modes and tinting.",
 		"file": "ConwaysGameOfLife"
 	},
 ];
