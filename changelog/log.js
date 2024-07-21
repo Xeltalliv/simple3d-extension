@@ -1,5 +1,23 @@
 const log = [
 	{
+		"version": "v1.1.0",
+		"pr": "https://github.com/TurboWarp/extensions/pull/1618",
+		"changes": [
+			"Deprecated and hidden [set [NAME] accurate interpolation [STATE]] block",
+			"Added [set [NAME] compute color [MODE]] block instead of it, which has 1 extra mode",
+			"Added [set [NAME] interleaved [PROPERTY] [LIST]] for setting mesh properties from a single list",
+			"Added new blending mode \"default behind\", which draws new primitives behind of what is already drawn",
+			"Added ability to measure text's horizontal advance distance, which is different from text's bounding box width",
+			"Added support for properly removing extension in PenguinMod, Snail IDE and other mods",
+			"Added support for SharkPool's \"Layer Control\" extension",
+			"Fixed [set clear color R:[] G:[] B:[] A:[]] block to take into a count premultiplied alpha",
+			"Fixed bug were it would always use accurate interpolating for vertex colors regardless of what was set",
+			"When drawing text with border, the border now extends the image by exactly ceiling of specified size in each of 4 directions",
+			"Changed default value of near plane from 0.01 to 0.1 to significantly reduce Z-fighting",
+			"Clarified which parts of the code are MPL-2.0 and which are BSD-3-Clause",
+		],
+	},
+	{
 		"version": "v1.0.4",
 		"pr": "https://github.com/TurboWarp/extensions/pull/1593",
 		"changes": [
