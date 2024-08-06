@@ -230,6 +230,10 @@ const links = [
 				"file": "import4"
 			},
 			{
+				"title": "Waiting for import to finish",
+				"file": "importWait"
+			},
+			{
 				"title": "Transforming imported meshes",
 				"file": "importTransform"
 			},
