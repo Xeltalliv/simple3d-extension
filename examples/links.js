@@ -348,6 +348,16 @@ const links = [
 		]
 	},
 	{
+		"name": "Miscellaneous",
+		"dir": "misc",
+		"links": [
+			{
+				"title": "Holding 3D item in hand and UI",
+				"file": "holdingAnItem"
+			},
+		]
+	},
+	{
 		"name": "Simple3D + Skins extension",
 		"dir": "extSkins",
 		"links": [
