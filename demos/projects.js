@@ -60,6 +60,16 @@ const projects = [
 		"file": "Cubemap"
 	},
 	{
+		"title": "Silhouette 1",
+		"description": "Simple and fast way to do silhouttes of covered parts of the mesh.",
+		"file": "Silhouette1"
+	},
+	{
+		"title": "Silhouette 2",
+		"description": "Fancy and slow silhouttes of covered parts of the mesh.",
+		"file": "Silhouette2"
+	},
+	{
 		"title": "Conway's Game of Life",
 		"description": "Running entirely on GPU on 1024x1024 grid. Uses render to texture, blending modes and tinting.",
 		"file": "ConwaysGameOfLife"
