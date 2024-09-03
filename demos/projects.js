@@ -61,12 +61,12 @@ const projects = [
 	},
 	{
 		"title": "Silhouette 1",
-		"description": "Simple and fast way to do silhouttes of covered parts of the mesh.",
+		"description": "Simple and fast way to do silhouettes of covered parts of the mesh.",
 		"file": "Silhouette1"
 	},
 	{
 		"title": "Silhouette 2",
-		"description": "Fancy and slow silhouttes of covered parts of the mesh.",
+		"description": "Fancy and slow way to do silhouettes of covered parts of the mesh.",
 		"file": "Silhouette2"
 	},
 	{
