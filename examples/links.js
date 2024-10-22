@@ -330,6 +330,16 @@ const links = [
 		]
 	},
 	{
+		"name": "Instancing",
+		"dir": "meshInstancing",
+		"links": [
+			{
+				"title": "2D instancing",
+				"file": "instancing2D"
+			},
+		]
+	},
+	{
 		"name": "Modifying parts of the mesh lists",
 		"dir": "partialUpdate",
 		"links": [
