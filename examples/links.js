@@ -320,6 +320,10 @@ const links = [
 		"dir": "meshTextureLoading",
 		"links": [
 			{
+				"title": "Drawing before texture loads",
+				"file": "textureBeforeLoads"
+			},
+			{
 				"title": "Blocked by CORS",
 				"file": "textureCORS"
 			},
