@@ -123,6 +123,10 @@ const links = [
 				"title": "UV precision issues",
 				"file": "texturesUVOffsetTooBig"
 			},
+			{
+				"title": "Textures and UVs (demo)",
+				"file": "texturesUVInteractive"
+			},
 		]
 	},
 	{
