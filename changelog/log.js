@@ -12,7 +12,7 @@ const log = [
 			"Added a warning for exceeding vertex index limit",
 			"Added a 90 second limit for model decoder. After that, it gets restarted",
 			"Added clearing of all the model importing queue upon the call to [reset everything]",
-			"Added temporary exports unstable exports to the external API",
+			"Added temporary unstable exports to the external API",
 			"Optimized transforms",
 			"Optimized extension for cases when it's sitting idle and isn't used",
 		],
