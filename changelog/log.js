@@ -1,5 +1,23 @@
 const log = [
 	{
+		"version": "v1.2.0",
+		"pr": "https://github.com/TurboWarp/extensions/pull/1618",
+		"changes": [
+			"Changed the way bone transforms block handles cases of missing original transforms or mismatching data",
+			"Changed bone transforms to be inheritable",
+			"Added [set [NAME] instance draw limit []] block for limiting amount of drawn instances",
+			"Added [set [BOXTYPE] X1:[] Y1:[] X2:[] Y2:[]] and [clear [BOXTYPE]] blocks for specifying and clearing viewport, clipping and pixel readback boxes",
+			"Added 3 new options into mesh property reported for estimating VRAM usage",
+			"Added a link to the tutorial in the documentation",
+			"Added a warning for exceeding vertex index limit",
+			"Added a 90 second limit for model decoder. After that, it gets restarted",
+			"Added clearing of all the model importing queue upon the call to [reset everything]",
+			"Added temporary exports unstable exports to the external API",
+			"Optimized transforms",
+			"Optimized extension for cases when it's sitting idle and isn't used",
+		],
+	},
+	{
 		"version": "v1.1.0",
 		"pr": "https://github.com/TurboWarp/extensions/pull/1618",
 		"changes": [
