@@ -1,7 +1,7 @@
 const log = [
 	{
 		"version": "v1.2.0",
-		"pr": "https://github.com/TurboWarp/extensions/pull/1618",
+		"pr": "https://github.com/TurboWarp/extensions/pull/1738",
 		"changes": [
 			"Changed the way bone transforms block handles cases of missing original transforms or mismatching data",
 			"Changed bone transforms to be inheritable",
