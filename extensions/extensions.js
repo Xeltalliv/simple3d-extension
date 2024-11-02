@@ -17,4 +17,10 @@ const extensions = [
 		"link": "https://raw.githubusercontent.com/Xeltalliv/extensions/simple3d-transformations/extensions/Xeltalliv/simple3D.js",
 		"thumb": "simple3Dmat4"
 	},
+	{
+		"title": "Simple3D: wireframe",
+		"description": "Wireframes. Use during devlopment. Remove before release.",
+		"link": "https://raw.githubusercontent.com/Xeltalliv/extensions/refs/heads/simple3d-wireframe/extensions/Xeltalliv/simple3Dwireframe.js",
+		"thumb": "simple3Dwireframe"
+	},
 ];
