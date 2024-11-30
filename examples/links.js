@@ -358,7 +358,7 @@ const links = [
 				"file": "instancingTransforms2"
 			},
 			{
-				"title": "Inheritance with instacing",
+				"title": "Inheritance with instancing",
 				"file": "instancingTextures"
 			},
 			{
