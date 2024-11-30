@@ -127,6 +127,10 @@ const links = [
 				"title": "Textures and UVs (demo)",
 				"file": "texturesUVInteractive"
 			},
+			{
+				"title": "Why are textures vertically flipped?",
+				"file": "texturesFlippedY"
+			},
 		]
 	},
 	{
@@ -342,7 +346,43 @@ const links = [
 		"dir": "meshInstancing",
 		"links": [
 			{
-				"title": "2D instancing",
+				"title": "No instancing",
+				"file": "instancingWithout"
+			},
+			{
+				"title": "Transforms instancing",
+				"file": "instancingTransforms1"
+			},
+			{
+				"title": "Transforms instancing with world transform",
+				"file": "instancingTransforms2"
+			},
+			{
+				"title": "Inheritance with instacing",
+				"file": "instancingTextures"
+			},
+			{
+				"title": "Chunk LOD system using instacing",
+				"file": "instancingChunks"
+			},
+			{
+				"title": "Positions instancing",
+				"file": "instancingPos"
+			},
+			{
+				"title": "Changing all instanced data every frame",
+				"file": "instancingMoveAll"
+			},
+			{
+				"title": "Changing some instanced data every frame",
+				"file": "instancingMoveOne"
+			},
+			{
+				"title": "Deleting and adding instances",
+				"file": "instancingDeleteOne"
+			},
+			{
+				"title": "Extra: Simple 2D instancing demo",
 				"file": "instancing2D"
 			},
 		]
@@ -376,6 +416,20 @@ const links = [
 			{
 				"title": "Holding 3D item in hand and UI",
 				"file": "holdingAnItem"
+			},
+		]
+	},
+	{
+		"name": "Overdraw",
+		"dir": "overdraw",
+		"links": [
+			{
+				"title": "With overdraw",
+				"file": "overdrawWith"
+			},
+			{
+				"title": "Without overdraw",
+				"file": "overdrawWithout"
 			},
 		]
 	},
