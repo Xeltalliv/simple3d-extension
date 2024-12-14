@@ -1,5 +1,12 @@
 const log = [
 	{
+		"version": "v1.2.1",
+		"pr": "https://github.com/TurboWarp/extensions/pull/1788",
+		"changes": [
+			"Fixed reading render target to list and to dataURI not working unless the reading area was set",
+		],
+	},
+	{
 		"version": "v1.2.0",
 		"pr": "https://github.com/TurboWarp/extensions/pull/1738",
 		"changes": [
