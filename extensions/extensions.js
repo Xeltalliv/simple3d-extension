@@ -7,7 +7,7 @@ const extensions = [
 	},
 	{
 		"title": "Simple3D: experimental optimizations",
-		"description": "Warning: unfinished and potentially unstable. This version is temporary. Do not rely on it.",
+		"description": "Warning: unfinished and might work incorrectly.",
 		"link": "https://raw.githubusercontent.com/Xeltalliv/extensions/simple3d-next/extensions/Xeltalliv/simple3D.js",
 		"thumb": "simple3Dfast"
 	},
