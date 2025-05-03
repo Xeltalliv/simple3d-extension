@@ -382,6 +382,10 @@ const links = [
 				"file": "instancingDeleteOne"
 			},
 			{
+				"title": "Instanced boxes of different sizes with tiling textures",
+				"file": "instancingTiling2"
+			},
+			{
 				"title": "Extra: Simple 2D instancing demo",
 				"file": "instancing2D"
 			},
