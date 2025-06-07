@@ -2,6 +2,7 @@ const log = [
 	{
 		"version": "v1.2.2",
 		"pr": "https://github.com/TurboWarp/extensions/pull/2085",
+		"js": "https://raw.githubusercontent.com/TurboWarp/extensions/fca86f3452529fc516ea8711c299bdbe6f7ea7ed/extensions/Xeltalliv/simple3D.js",
 		"changes": [
 			"Fixed detection of Simple3D layer by touching blocks",
 			"Optimized textures from lists",
@@ -12,6 +13,7 @@ const log = [
 	{
 		"version": "v1.2.1",
 		"pr": "https://github.com/TurboWarp/extensions/pull/1788",
+		"js": "https://raw.githubusercontent.com/TurboWarp/extensions/0ccb518f535fc2cf5cba9d87affcac54ad75e0cb/extensions/Xeltalliv/simple3D.js",
 		"changes": [
 			"Fixed reading render target to list and to dataURI not working unless the reading area was set",
 		],
@@ -19,6 +21,7 @@ const log = [
 	{
 		"version": "v1.2.0",
 		"pr": "https://github.com/TurboWarp/extensions/pull/1738",
+		"js": "https://raw.githubusercontent.com/TurboWarp/extensions/2e9eb5af777b15e3b7b698a38e566f57791f47ff/extensions/Xeltalliv/simple3D.js",
 		"changes": [
 			"Changed the way bone transforms block handles cases of missing original transforms or mismatching data",
 			"Changed bone transforms to be inheritable",
@@ -37,6 +40,7 @@ const log = [
 	{
 		"version": "v1.1.0",
 		"pr": "https://github.com/TurboWarp/extensions/pull/1618",
+		"js": "https://raw.githubusercontent.com/TurboWarp/extensions/8f48237a8a90a3e763b0291f6be775f59f689bd6/extensions/Xeltalliv/simple3D.js",
 		"changes": [
 			"Deprecated and hidden [set [NAME] accurate interpolation [STATE]] block",
 			"Added [set [NAME] compute color [MODE]] block instead of it, which has 1 extra mode",
@@ -55,6 +59,7 @@ const log = [
 	{
 		"version": "v1.0.4",
 		"pr": "https://github.com/TurboWarp/extensions/pull/1593",
+		"js": "https://raw.githubusercontent.com/TurboWarp/extensions/034d737a80eacd78c124a974e7807b34f9093a5a/extensions/Xeltalliv/simple3D.js",
 		"changes": [
 			"Added \"Open extra resources\" button",
 			"Added 2 new comments to sample project",
@@ -63,6 +68,7 @@ const log = [
 	{
 		"version": "v1.0.3",
 		"pr": "https://github.com/TurboWarp/extensions/pull/1500",
+		"js": "https://raw.githubusercontent.com/TurboWarp/extensions/6d972537a86165d2515c2167e5a5c2974afa1406/extensions/Xeltalliv/simple3D.js",
 		"changes": [
 			"Fixed [set [NAME] vertex draw range from (FROM) to (TO)] block",
 			"Added popup when extension is packaged incorrectly",
@@ -75,6 +81,7 @@ const log = [
 	{
 		"version": "v1.0.2",
 		"pr": "https://github.com/TurboWarp/extensions/pull/1480",
+		"js": "https://raw.githubusercontent.com/TurboWarp/extensions/07ba2912ed0f105aef9cedc75ee7efd8858007e4/extensions/Xeltalliv/simple3D.js",
 		"changes": [
 			"Fixed [transform direction X: [X] Y: [Y] Z: [Z] from [FROM] to [TO]] block corrupting tranformations that it was only meant to read",
 			"Fixed meshes without vertex positions attached causing a crash",
@@ -87,6 +94,7 @@ const log = [
 	{
 		"version": "v1.0.1",
 		"pr": "https://github.com/TurboWarp/extensions/pull/1468",
+		"js": "https://raw.githubusercontent.com/TurboWarp/extensions/b8abfd0494beff6b992c731affdb91750e7608ad/extensions/Xeltalliv/simple3D.js",
 		"changes": [
 			"Fixed [reset transformation's [COMPONENT]] block in PenguinMod",
 			"Fixed \"projected (scratch units)\" in [transform X: [X] Y: [Y] Z: [Z] from [FROM] to [TO]] block",
@@ -96,6 +104,7 @@ const log = [
 	{
 		"version": "v1.0.0",
 		"pr": "https://github.com/TurboWarp/extensions/pull/1417",
+		"js": "https://raw.githubusercontent.com/TurboWarp/extensions/cb6ec3e7baae6370f0c3a90df1235ca36ee91369/extensions/Xeltalliv/simple3D.js",
 		"changes": [
 			"Initial release"
 		],

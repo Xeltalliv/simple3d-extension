@@ -115,3 +115,6 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 }
+.js-file {
+	font-size: small;
+}

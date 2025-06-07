@@ -6,6 +6,7 @@ for(const version of log) {
 	const content = document.createElement("a");
 	const title = document.createElement("h2");
 	const titleA = document.createElement("a");
+	const jsA = document.createElement("a");
 	const list = document.createElement("ul");
 
 	content.id = version.version;
@@ -13,6 +14,10 @@ for(const version of log) {
 	title.style.margin = "0";
 	titleA.href = version.pr;
 	titleA.target = "_blank";
+	jsA.textContent = "js file";
+	jsA.href = version.js;
+	jsA.target = "_blank";
+	jsA.classList.add("js-file");
 	content.classList.add("content");
 	if (hash.includes(version.version)) content.classList.add("content-focus");
 
@@ -22,7 +27,7 @@ for(const version of log) {
 		list.append(changeEl);
 	}
 	titleA.append(title);
-	content.append(titleA, list);
+	content.append(titleA, jsA, list);
 	main.append(content, br);
 }
 
