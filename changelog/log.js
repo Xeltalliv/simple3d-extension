@@ -1,5 +1,15 @@
 const log = [
 	{
+		"version": "v1.2.2",
+		"pr": "https://github.com/TurboWarp/extensions/pull/2085",
+		"changes": [
+			"Fixed detection of Simple3D layer by touching blocks",
+			"Optimized textures from lists",
+			"Optimized transform directionblock",
+			"Added transform block caching",
+		],
+	},
+	{
 		"version": "v1.2.1",
 		"pr": "https://github.com/TurboWarp/extensions/pull/1788",
 		"changes": [
