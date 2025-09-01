@@ -421,6 +421,10 @@ const links = [
 				"title": "Holding 3D item in hand and UI",
 				"file": "holdingAnItem"
 			},
+			{
+				"title": "Portals via oblique projection",
+				"file": "obliqueProjection"
+			},
 		]
 	},
 	{
