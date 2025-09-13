@@ -70,6 +70,11 @@ const projects = [
 		"file": "Silhouette2"
 	},
 	{
+		"title": "Portals",
+		"description": "See-through portals, with ability to see multiple layers deep.",
+		"file": "Portals"
+	},
+	{
 		"title": "Conway's Game of Life",
 		"description": "Running entirely on GPU on 1024x1024 grid. Uses render to texture, blending modes and tinting.",
 		"file": "ConwaysGameOfLife"
