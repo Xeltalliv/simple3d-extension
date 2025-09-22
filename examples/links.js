@@ -32,7 +32,7 @@ const links = [
 				"file": "shapeXY"
 			},
 			{
-				"title": "Drawing 2 traingles",
+				"title": "Drawing 2 triangles",
 				"file": "shapeXY2"
 			},
 			{
@@ -52,7 +52,7 @@ const links = [
 				"file": "shapePrimitiveTypes"
 			},
 			{
-				"title": "Interrupting traingle strips/fans, line strips/loops",
+				"title": "Interrupting triangle strips/fans, line strips/loops",
 				"file": "shapeRestartIndex"
 			},
 			{
