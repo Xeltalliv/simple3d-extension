@@ -6,7 +6,7 @@ const projects = [
 	},
 	{
 		"title": "Grassy field during rain",
-		"description": "Demo with 400k waving blades of grass with fake reflections and 10k moving rain droplets using instaced rendering.",
+		"description": "Demo with 400k waving blades of grass with fake reflections and 10k moving rain droplets using instanced rendering.",
 		"file": "GrassRainy"
 	},
 	{
@@ -36,17 +36,17 @@ const projects = [
 	},
 	{
 		"title": "Point Lighting 2",
-		"description": "Same as Point Lighting 1 except rendering to wall textures. Also remake of another Pen+ V7 demo by ObviousAlexC.",
+		"description": "Same as Point Lighting 1 except rendering to wall textures. Also a remake of another Pen+ V7 demo by ObviousAlexC.",
 		"file": "PenPlusRemakeFramebuffer"
 	},
 	{
 		"title": "Walking 1",
-		"description": "A demo that showcases the use of wrapper block for rendering hierarchies of meshes. In this case - an animated humanoid character.",
+		"description": "A demo that showcases the use of a wrapper block for rendering hierarchies of meshes. In this case - an animated humanoid character.",
 		"file": "Walking1"
 	},
 	{
 		"title": "Walking 2",
-		"description": "Same as Walking 1, except the charater is controllable.",
+		"description": "Same as Walking 1, except the character is controllable.",
 		"file": "Walking2"
 	},
 	{
@@ -76,7 +76,7 @@ const projects = [
 	},
 	{
 		"title": "Conway's Game of Life",
-		"description": "Running entirely on GPU on 1024x1024 grid. Uses render to texture, blending modes and tinting.",
+		"description": "Running entirely on the GPU on a 1024x1024 grid. Uses render to texture, blending modes and tinting.",
 		"file": "ConwaysGameOfLife"
 	},
 ];

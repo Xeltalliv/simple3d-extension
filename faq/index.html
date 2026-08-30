@@ -52,13 +52,13 @@
 					<dd>A: Because there is no way to make a decent 3D extension without a lot of blocks. And because people who actually use this extension keep asking to add more. To start using the extension, you don't need to know most of them.</dd>
 
 					<dt>Q: Why is Simple3D called simple, even though it's not simple?</dt>
-					<dd>A: The word "Simple" primarily refers to what kind of graphics this extension is meant for. It's also relatively simple to use, especially when compard to raw WebGL. Simple to use doesn't mean simple to lean though.</dd>
+					<dd>A: The word "Simple" primarily refers to what kind of graphics this extension is meant for. It's also relatively simple to use, especially when compared to raw WebGL. Simple to use doesn't mean simple to learn though.</dd>
 
 					<dt>Q: Are there youtube tutorials?</dt>
 					<dd>A: There are no official ones, but there are few unofficial ones.</dd>
 
 					<dt>Q: Why isn't Simple3D translated?</dt>
-					<dd>A: Due to the unusual way this extension is structured, the normal way it's done in other extsnions wouldn't work. But it's planned.</dd>
+					<dd>A: Due to the unusual way this extension is structured, the normal way it's done in other extensions wouldn't work. But it's planned.</dd>
 
 					<dt>Q: What other 3D extensions exist?</dt>
 					<dd>A: The most popular are:<ul>
@@ -76,22 +76,22 @@
 						If something better than simple3D comes out for rendering, maybe you'll want to switch to that, but keep using the same collision code.
 						Or if someone makes a better collision extension, you you'll want to use that, without bloating your project with simple3d collision, that you aren't even going to use.</li>
 						<li>To support this separation, Simple3D only stores vertex data and texture data in VRAM, not in normal RAM. Meanwhile collision requires storing another copy of the data in RAM. So regardless of how you choose to do collision, you wouldn't be wasting RAM storing 2 copies of the mesh.</li>
-					</dd>
+					</ul></dd>
 
 					<dt>Q: Does Simple3D support physics?</dt>
 					<dd>A: No. You should use a dedicated physics extension for that. For example, you can try using <a href="https://github.com/TurboWarp/extensions/pull/1974">this</a>.</dd>
 
 					<dt>Q: Does Simple3D support custom shaders?</dt>
 					<dd>A: No, and it's never planned, as it goes directly against the primary reasoning behind the extension's name - it's only meant for simple graphics.
-					And as a result, the whole extenions was structred in accordance to expectation that shaders are never going to be added, so retroactively adding shaders to it now will result in unoptimal and messy set of blocks.
-					Making a separate extension (Andavnced3D) fully centered around shaders from the start is considered.
+					And as a result, the whole extensions was structured in accordance to expectation that shaders are never going to be added, so retroactively adding shaders to it now will result in suboptimal and messy set of blocks.
+					Making a separate extension (Advanced3D) fully centered around shaders from the start is considered.
 					</dd>
 
 					<dt>Q: Does Simple3D do any culling?</dt>
 					<dd>A: it only does backface culling, but only if it was manually enabled. Frustum culling and occlusion culling must be done by the project.</dd>
 
 					<dt>Q: Does Simple3D do frustum culling automatically?</dt>
-					<dd>A: No. Even though Simple3D has built-in blocks to make setting up projection transformations easier for most common cases, it really allows any custom projection. Because of that, only the projects knows the information neccessary to do frustum culling, so it physically can't be added.</dd>
+					<dd>A: No. Even though Simple3D has built-in blocks to make setting up projection transformations easier for most common cases, it really allows any custom projection. Because of that, only the projects knows the information necessary to do frustum culling, so it physically can't be added.</dd>
 
 					<dt>Q: Does Simple3D do occlusion culling automatically?</dt>
 					<dd>A: No. There exists a lot of approaches to occlusion culling, all with their own sets of pros and cons. None of them are universal, and they often require designing scene in some specific ways, like building map out of solid brushes with no holes and having it processed with BSP, manually placing occlusion portals, etc.
@@ -131,10 +131,10 @@
 					<dd>A: No.</dd>
 
 					<dt>Q: Does Simple3D support AR?</dt>
-					<dd>A: It doesn't do AR on it's own. You need a separate extension for that. But it should be compatible with most other AR extensions.</dd>
+					<dd>A: It doesn't do AR on its own. You need a separate extension for that. But it should be compatible with most other AR extensions.</dd>
 
 					<dt>Q: Does Simple3D support VR?</dt>
-					<dd>A: It doesn't do VR on it's own. You need a separate extension for that. But it should be compatible with most other VR extensions.</dd>
+					<dd>A: It doesn't do VR on its own. You need a separate extension for that. But it should be compatible with most other VR extensions.</dd>
 
 					<dt>Q: Is Simple3D only compatible with Vadik1's AR extension?</dt>
 					<dd>A: No, it should be compatible with most other AR extensions (if any exist). Simple3D and Vadik1's AR extension have a special integration to make passing matrices more convenient using less blocks, but the general-purpose way of passing matrices should still work with any other extension.</dd>
@@ -172,7 +172,7 @@
 					<dd>A: <img style="width: 64px; image-rendering: pixelated;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAABg2lDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw1AUhU9TpUUqDnYQcchQneyiIo61FYpQIdQKrTqYvPQPmjQkKS6OgmvBwZ/FqoOLs64OroIg+APi7OCk6CIl3pcUWsT44PI+znvncN99gNCqMc3qSwCabpvZdFLMF1bF0CsEhAGqmMwsY16SMvBdX/cI8P0uzrP87/25BtWixYCASJxghmkTbxDPbtoG533iKKvIKvE58aRJDRI/cl3x+I1z2WWBZ0bNXDZFHCUWyz2s9DCrmBrxDHFM1XTKF/Ieq5y3OGu1Buv0yV8YKeory1ynGkMai1iCBBEKGqiiBhtx2nVSLGTpPOnjH3X9ErkUclXByLGAOjTIrh/8D37P1ipNT3lJkSTQ/+I4H+NAaBdoNx3n+9hx2idA8Bm40rv+eguY+yS92dViR8DQNnBx3dWUPeByBxh5MmRTdqUglVAqAe9n9E0FYPgWGFjz5tY5x+kDkKNZZW6Ag0NgokzZ6z7vDvfO7d87nfn9ACRZcoedT/mXAAAAGFBMVEVtbW11dXVtbf+EhIT/bW2goKBt/21t//8Qh6V7AAAACXBIWXMAABhMAAAYdAGfqEAgAAAAB3RJTUUH6AIIAA4YBFj9GAAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAABjSURBVAjXPctBDkAwFIThqdey91ygnIAoa9EzcIBGLyDS69MW/26+ZIAvZYwhZkbpNy/saKGOyUjmFeQ2J5Z+SUJNFi+TfK+/uKJCtENbhT2gYO7UNT+ie03nfoLqV4os4X/dFf0TKILDS0AAAAAASUVORK5CYII=" alt="a grey 2x2 checkerboard pattern with text consisting of: green TE in top left corner, red ST in top right corner, blue ST in bottom left corner, cyan TE in bottom right corner, resulting in tiled word TEST"></dd>
 
 					<dt>Q: When does default texture show up?</dt>
-					<dd>A: Default texture shows up when the mesh has textute coordinates, but no texture.</dd>
+					<dd>A: Default texture shows up when the mesh has texture coordinates, but no texture.</dd>
 
 					<dt>Q: Can I set default texture to be blurred instead of pixelated?</dt>
 					<dd>A: No.</dd>
@@ -186,7 +186,7 @@
 						<li>the aspect ratio of the image/texture `(mesh [mesh name] [texture width v])` and `(mesh [mesh name] [texture height v])`</li>
 					</ul></dd>
 
-					<dt>Q: Why are textures upsidedown/vertically flipped?</dt>
+					<dt>Q: Why are textures upside down/vertically flipped?</dt>
 					<dd>A: This is not a quirk of Simple3D. For historic reasons, most things to work with 2D graphics and image formats have Y-axis facing down, meanwhile OpenGL/WebGL has Y-axis facing up.
 					Due to this mismatch, things that have higher Y values that should end up lower, end up higher.
 					WebGL has a built-in feature to flip images vertically when importing called <i>gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);</i> added specifically to mitigate this issue, but at this point Simple3D does not use it. However, it is planned.</dd>
@@ -229,10 +229,10 @@
 					<dd>A: Ensure that the texture providing block returns `[texture data]`, as well as use `(mesh [mesh name] [texture is loading])` and `(mesh [mesh name] [texture has failed to load])` to get more information.</dd>
 
 					<dt>Q: Why is texture not setting from URL?</dt>
-					<dd>A: While you can open any URL manually in the web browser fine and view it's content, by default websites can't access data from any other websites, unless those other websites explicetly grant permission to access data from them, which most websites don't do. This is called a <b>CORS policy</b> and you can read more about it <a href="https://docs.turbowarp.org/cors">here</a>.</dd>
+					<dd>A: While you can open any URL manually in the web browser fine and view it's content, by default websites can't access data from any other websites, unless those other websites explicitly grant permission to access data from them, which most websites don't do. This is called a <b>CORS policy</b> and you can read more about it <a href="https://docs.turbowarp.org/cors">here</a>.</dd>
 
 					<dt>Q: Why did it load incorrect texture?</dt>
-					<dd>A: `[texture data]` is nothing more than a 15 character string. When you call a block that provides a texture, it does not return the texture as the value of a block itself, it puts it into a temporary variable within extension, while returning you `[texture data]` string. The texture accepting blocks just read from that internal variable. There can only be one one at the time in that variable. So whichever texture providing block you called last, will be used by all subsequent texture accepting blocks. That is why storing texture data into variables for later or passing them through custom block arguments will often behave unexpectadly.</dd>
+					<dd>A: `[texture data]` is nothing more than a 15 character string. When you call a block that provides a texture, it does not return the texture as the value of a block itself, it puts it into a temporary variable within extension, while returning you `[texture data]` string. The texture accepting blocks just read from that internal variable. There can only be one at the time in that variable. So whichever texture providing block you called last, will be used by all subsequent texture accepting blocks. That is why storing texture data into variables for later or passing them through custom block arguments will often behave unexpectedly.</dd>
 
 					<dt>Q: How to solve texture seams when using texture atlas?</dt>
 					<dd>A: There are multiple reasons why texture seams may occur:<ul>
@@ -240,14 +240,14 @@
 						Solution: use `set [mesh name] compute color (once at midpoint of covered samples v)` for the mesh which has the problem or turn off antialiasing.</li>
 						<li>Lower resolution versions of textures from mipmapping may be combining adjacent areas into one pixel.<br>
 						Solution: turn off mipmapping.</li>
-						<li>When anisatropic filtering samples multiple points on the texture, it may be extrapolating UV out of bounds.<br>
-						Solution: turn off anisatropic filtering.</li>
-						<li>You may be using fractional values that cannot be represented precisely using finite amount of bits. Obviosly don't use 1/3 ≈ 0.333333. But because computers work in binary, values like 1/10 also can't be represented exactly. Only powers of 2 (1/2, 1/4, 1/8, 1/16, ...) and their combinations (3/4, 7/16, 183/256, ...) can be represented accurately.<br>
+						<li>When anisotropic filtering samples multiple points on the texture, it may be extrapolating UV out of bounds.<br>
+						Solution: turn off anisotropic filtering.</li>
+						<li>You may be using fractional values that cannot be represented precisely using finite amount of bits. Obviously don't use 1/3 ≈ 0.333333. But because computers work in binary, values like 1/10 also can't be represented exactly. Only powers of 2 (1/2, 1/4, 1/8, 1/16, ...) and their combinations (3/4, 7/16, 183/256, ...) can be represented accurately.<br>
 						Solution: ensure that your texture atlases are powers of 2.</li>
 					</ul></dd>
 
-					<dt>Q: Why are vertor textures pixelated?</dt>
-					<dd>A: GPUs only support bitmap textures. The way vector images are handled is by either converting them into bitmap once in advance, at a resolution high enough that pixelation isn't noticable, or by converting vector image into polygonal 3D model, usually with some advanced shaders. Simple3D does not allow custom shaders, so this approach is quite limited. But you can still attempt to convert svg images into 3D models using Blender - for simple vector images that works quite well.</dd>
+					<dt>Q: Why are vector textures pixelated?</dt>
+					<dd>A: GPUs only support bitmap textures. The way vector images are handled is by either converting them into bitmap once in advance, at a resolution high enough that pixelation isn't noticeable, or by converting vector image into polygonal 3D model, usually with some advanced shaders. Simple3D does not allow custom shaders, so this approach is quite limited. But you can still attempt to convert svg images into 3D models using Blender - for simple vector images that works quite well.</dd>
 
 					<dt>Q: How to change resolution at which vector images are rasterized?</dt>
 					<dd>A: There isn't currently a way, but it's planned.</dd>
@@ -278,10 +278,10 @@
 					<dd>A: Open browser devtools and look for a file named simple3D.js. For example, if extension outputs into the console with which flags it compiled shaders, you can click on the file on the right that printed it. Or you can try to find it in the Sources or Network tab. The version should be at the top of the file.</dd>
 
 					<dt>Q: How to change to a different version of Simple3D?</dt>
-					<dd>A: Go to <a href="../changelog/">changelog</a>, find the js file of the version you want, download it or copy it's content into the clipboard. Then open a new project in TurboWarp, first import the version of the extension you want to switch to, then import the project and then save the project. Since extension is already loaded, TurboWarp will not load the version of extension that the project used previously.</dd>
+					<dd>A: Go to <a href="../changelog/">changelog</a>, find the js file of the version you want, download it or copy its content into the clipboard. Then open a new project in TurboWarp, first import the version of the extension you want to switch to, then import the project and then save the project. Since extension is already loaded, TurboWarp will not load the version of extension that the project used previously.</dd>
 
 					<dt>Q: Why is project not loading in TurboWarp desktop?</dt>
-					<dd>A: TurboWarp desktop may have an outdated version of the extsnion, compared to the version available on the web version, in which the project you are trying to open could've been made.</dd>
+					<dd>A: TurboWarp desktop may have an outdated version of the extension, compared to the version available on the web version, in which the project you are trying to open could've been made.</dd>
 
 					<dt>Q: Why is feature mentioned in the documentation is missing from the extension?</dt>
 					<dd>A: If you are using TurboWarp Desktop, your version of Simple3D might be outdated - check the website version. Documentation might also be referring to deprecated feature, the blocks for which were hidden.</dd>
@@ -289,13 +289,13 @@
 					<dt>Q: Does Simple3D have addon extensions that add more features to it?</dt>
 					<dd>A: Yes, you can find them <a href="../extensions/">here</a>.</dd>
 
-					<dt>Q: Do I need to load Simple3D form file when using addons?</dt>
+					<dt>Q: Do I need to load Simple3D from file when using addons?</dt>
 					<dd>A: For some yes, for some no. Some addons hook into internals of Simple3D to apply their changes. With updates, Simple3D internals can change and are not guaranteed to stay compatible with addons, especially old versions of addons loaded from text that do not auto-update. So to keep it from breaking, the main extension should also be loaded in a way that prevents it from auto-updating.</dd>
 
 					<dt>Q: Where do I report a bug or write suggestions?</dt>
 					<dd>A: Either:<ul>
 						<li>Vadik1's profile on Scratch</li>
-						<li>Xeltalliv's fork of turbowarp/extsnions on github</li>
+						<li>Xeltalliv's fork of turbowarp/extensions on github</li>
 						<li>The topic dedicated to Simple3D in #projects channel of TurboWarp discord server (best option, if you are already there)</li>
 					</dd>
 
@@ -318,7 +318,7 @@
 
 					<dt>Q: Why Simple3D requires WebGL2 and not WebGL1?</dt>
 					<dd>A: Simple3D originally started with WebGL1, but it had too many issues unsolvable without switching to WebGL2, so it was changed:<ul>
-						<li>In WebGL1, renderbuffers used for z-buffer can only use 16-bit precison which looks terrible compared to 24-bit precision of the main canvas. Ability to use 24-bit and 32-bit precisions for not just canvas were only added in WebGL2.</li>
+						<li>In WebGL1, renderbuffers used for z-buffer can only use 16-bit precision which looks terrible compared to 24-bit precision of the main canvas. Ability to use 24-bit and 32-bit precisions for not just canvas were only added in WebGL2.</li>
 						<li>In WebGL1 vertex indices can only go up to 65535. In WebGL2 it's 4294967296. 65535 vertices per mesh is not a lot.</li>
 						<li>Instancing (one of the most used Simple3D features) is a WebGL2-only thing that cannot be polyfilled in any reasonably performant way. Drawing 1 million instances with 1 draw call can run at 60 fps. Polyfilling it with 1 million individual draw calls will be very slow.</li>
 						<li>In WebGL1, textures with sizes that are not power of 2 cannot repeat, have mipmaps, and use some other features. In WebGL2 those limitations were removed - textures can have any size and still use most features.</li>
@@ -329,13 +329,13 @@
 					<dd>A: Porting it to WebGPU will not make it magically faster.
 					WebGPU is not faster on the GPU side. It doesn't allow drawing more polygons or make shaders faster. WebGPU only helps reduce CPU-side overhead, allowing people to do more draw calls.
 					So if you are drawing a lot of polygons with one draw call, performance will be identical in both.
-					TurboWarp already adds a lot of overhead to calling any extension blocks, so the overhead of actual draw calls is negligable compared to that.
+					TurboWarp already adds a lot of overhead to calling any extension blocks, so the overhead of actual draw calls is negligible compared to that.
 					Simple3D still has a lot of room for optimization.
 					</dd>
 
 					<dt>Q: Why is Simple3D so inefficient? Why does it recompute so much every time draw mesh is called? Why it's still written like it's WebGL1, not taking full advantage of WebGL2, despite requiring WebGL2?</dt>
 					<dd>A: It originally started as WebGL1-based extension. The goal was to release extension quickly, with many features missing, make prototyping on features quick and optimize later, once everything else is finalized.<br>
-					Optimized version of Simple3D v1,1.0 does exist, but it is experimental and potentially has bugs. You can find it on <a href="../extensions/">Extensions page</a>.</dd>
+					Optimized version of Simple3D v1.1.0 does exist, but it is experimental and potentially has bugs. You can find it on <a href="../extensions/">Extensions page</a>.</dd>
 
 					<dt>Q: Does Simple3D use a 3D graphics library like ThreeJS or BabylonJS?</dt>
 					<dd>A: No, it's custom-made.</dd>
@@ -347,11 +347,11 @@
 
 					<dt>Q: Can I sell projects with Simple3D?</dt>
 					<dd>A: Sure! Read Mozilla Public License Version 2.0 and BSD 3 Clause licenses for more information.<br>
-					But if you modify Simple3D within them, you mush publish just your modified version of the extension separately as open source under the same license as original.</dd>
+					But if you modify Simple3D within them, you must publish just your modified version of the extension separately as open source under the same license as original.</dd>
 
 					<dt>Q: Can I make my own extension based on Simple3D?</dt>
 					<dd>A: Sure, but you must keep any files you modified open source under the same license.<br>
-					Also, to avoid inconveniencing Vadik1 by confused users, please make it clear that that version is your, with your ideas (that Vadik1 may not neccessarily agree with) and maintained by you. How to do that the best is up to you.
+					Also, to avoid inconveniencing Vadik1 by confused users, please make it clear that that version is yours, with your ideas (that Vadik1 may not neccessarily agree with) and maintained by you. How to do that the best is up to you.
 					</dd>
 
 					<dt>Q: Can I port Simple3D to other mods?</dt>
@@ -390,7 +390,7 @@
 
 					<dt>Q: How to import JSON?</dt>
 					<dd>A: You'll need to use a JSON extension for that.<br>
-					Many things that people would like to do with JSON, can be done without JSON, and will run much faster. So nothing JSON related is added into Simple3D to discourage people from making slow code, and use JSON extension themselves where it's strictly neccessary.</dd>
+					Many things that people would like to do with JSON, can be done without JSON, and will run much faster. So nothing JSON related is added into Simple3D to discourage people from making slow code, and use JSON extension themselves where it's strictly necessary.</dd>
 
 					<dt>Q: How to import arrays? (lists as values)</dt>
 					<dd>A: Currently this is not supported. You'll need to turn them into normal scratch lists first.</dd>
@@ -408,7 +408,7 @@
 
 					<dt>Q: What is "near" and "far" values in perspective projection?</dt>
 					<dd>A: The "near" and "far" values define the depth clipping boundaries. Any pixels with depth closer to the camera than the "near" value or further away than the "far" value will not rendered.
-					Additionally, depth of each pixel in the depth buffer is stored as 24-bit number, which means there are only 16777216 possible values. The "near" and "far" define how depth will be mapped from it's infinite range to that limited range. Setting "near" and "far" to closer values will result in higher precision and will make "Z-figting" issue less likely.
+					Additionally, depth of each pixel in the depth buffer is stored as 24-bit number, which means there are only 16777216 possible values. The "near" and "far" define how depth will be mapped from its infinite range to that limited range. Setting "near" and "far" to closer values will result in higher precision and will make "Z-figting" issue less likely.
 					</dd>
 
 					<dt>Q: Why is order in which pixels are drawn flickering?</dt>
@@ -422,8 +422,8 @@
 					<dt>Q: How to set position of a mesh?</dt>
 					<dd>A: Meshes are like costumes, and drawing them is like stamping. Meshes themselves don't have a position, but there are global transformations describing where any meshes will be drawn.
 					For convenience and for some effects (like fog) to work correctly, global transformations are split into 3 steps: "to projected from view space", "to view space from world space", and "to world space from model space".
-					For definiting "position" of a mesh (as well as rotation and scale) you should configure "to world space from model space" transformation.
-					The way to do this is usually to first scale and rotate the vertices of the mesh around it's own origin, then move/offset/translate it to the correct position in thw world.
+					For defining "position" of a mesh (as well as rotation and scale) you should configure "to world space from model space" transformation.
+					The way to do this is usually to first scale and rotate the vertices of the mesh around its own origin, then move/offset/translate it to the correct position in the world.
 					Since in code all the transformations are defined in the reverse order, it usually looks something like this:
 					<pre class="blocks">
 					configure [to world space from model space v] transformation :: sensing
@@ -464,7 +464,7 @@
 					For the one where it exists "in a separate world", you'll need to::<ol>
 					<li>Set up "to view space from world space" transformation based on your main world camera position and rotation.</li>
 					<li>Render all of your 3D scene.</li>
-					<li>Set up "to view space from world space" transformation to be no tranformation or some always the same transformation.</li>
+					<li>Set up "to view space from world space" transformation to be no transformation or some always the same transformation.</li>
 					<li>Render your held item.</li>
 					</ol><br>
 					You can see example of the second approach <a href="../examples/#misc/holdingAnItem">here</a>.
@@ -510,10 +510,10 @@
 					</dd>
 
 					<dt>Q: How to draw a sphere?</dt>
-					<dd>A: To draw a sphere you'll need a mesh of a sphere. Either generate it using code or import from obj. Generating it using code is not difficult, and if you are just learning simple3D, can be an nice exercise.</dd>
+					<dd>A: To draw a sphere you'll need a mesh of a sphere. Either generate it using code or import from obj. Generating it using code is not difficult, and if you are just learning simple3D, can be a nice exercise.</dd>
 
 					<dt>Q: How to draw a plane?</dt>
-					<dd>A: To draw a quad you'll need a mesh of a quad. Define it using lists or import from obj. Defining it using lists is prefered. One of the ways to do it:<br>
+					<dd>A: To draw a quad you'll need a mesh of a quad. Define it using lists or import from obj. Defining it using lists is preferred. One of the ways to do it:<br>
 					Create 2 lists:
 					<table>
 						<thead><tr><th>list x</th><th>list y</th></thead>
@@ -534,11 +534,11 @@
 
 					<dt>Q: Why is my voxel game so laggy?</dt>
 					<dd>A: If you are drawing a mesh of a cube separately for each block, then that's why. There is no way to make that approach fast.<br>
-					In order to create a volxel engine that is actually fast, you'll need to create code that generates a mesh for the entire world or the chunk of the world, while omitting any faces occluded by other solid blocks.<br>
+					In order to create a voxel engine that is actually fast, you'll need to create code that generates a mesh for the entire world or the chunk of the world, while omitting any faces occluded by other solid blocks.<br>
 					That will drastically reduce amount of draw calls (amount of times you call `draw mesh [mesh name]`).</dd>
 
 					<dt>Q: Should I use "overwrite color" blending when possible?</dt>
-					<dd>A: Yes. Proper blending requires reading previous color from VRAM. "overwrite" blending skips that step, improving memory thoughput.</dd>
+					<dd>A: Yes. Proper blending requires reading previous color from VRAM. "overwrite" blending skips that step, improving memory throughput.</dd>
 
 					<dt>Q: What is overdraw?</dt>
 					<dd>A: == TODO ==</dd>
@@ -548,19 +548,19 @@
 
 					<dt>Q: Should I start projects with "reset everything"?</dt>
 					<dd>A: You don't have to, but it's generally a good practice.<br>
-					If you don't, you might accidentally depend on something, that you don't have the code to set up again, beacuse you either did it manually, or removed, or broke the code that did it.
-					In such case the project will apper to work, up until the next time you reopen the project and it's suddenly broken, because the thing it depended didn't get recreated.
+					If you don't, you might accidentally depend on something, that you don't have the code to set up again, because you either did it manually, or removed, or broke the code that did it.
+					In such case the project will appear to work, up until the next time you reopen the project and it's suddenly broken, because the thing it depended didn't get recreated.
 					With "reset everything" you'll find and be able to fix all the problems like that immediately, rather than much later.</dd>
 
 					<dt>Q: Why did my project break if it worked fine yesterday? Why did my project break after reopening it?</dt>
-					<dd>A: Last time you used the project, you might've accidentally depended on something, that you don't have the code to set up again, beacuse you either did it manually, or removed, or broke the code that did it.
+					<dd>A: Last time you used the project, you might've accidentally depended on something, that you don't have the code to set up again, because you either did it manually, or removed, or broke the code that did it.
 					In such case the project will apper to work, up until the next time you reopen the project and it's suddenly broken, because the thing it depended didn't get recreated.
 					If you don't use "reset everything" at the beginning of the project, the chances of this happening are much higher.
 					It's also possible that Simple3D extension updated and introduced some bug. You can check for updates and load old version from <a href="../changelog/">this page</a>. If Simple3D update broke it, please report the bug to Vadik1.
 					It's also possible that TurboWarp updated, and your version of Simple3D became incompatible with it. When that happens, Simple3D might take some time to be updated. Additionlly, if you loaded Simple3D from text or file, you will need to update it manually (but that may break your addons).
 					</dd>
 
-					<dt>Q: Can I toggle antialising without resetiting everything?</dt>
+					<dt>Q: Can I toggle antialising without resetting everything?</dt>
 					<dd>A: No. This is a limitation of WebGL. Simple3D could've copied all the data from GPU back to RAM, recreated WebGL context and reuploaded all the data, but it would've added too much complexity to the code.</dd>
 
 					<dt>Q: What type of antialiasing Simple3D use?</dt>
@@ -572,7 +572,7 @@
 					<dd>A: == TODO ==</dd>
 
 					<dt>Q: Why when I'm rendering to texture, everything is incorrectly layered on top of one another?</dt>
-					<dd>A: Whether depth buffer is enabled and what comparision mode it is set to is stored for each render target separately. By default, depth writing is disabled. And memory for storing depth of pixels isn't even allocated until depth write is enabled. To better understand this, the following blocks may be useful: `(render target [has depth storage v])`, `(render target [depth write v])`, `(render target [depth test v])`, `(mesh [mesh name] [texture stores depth v])`, `(mesh [mesh name] [texture depth write v])`, `(mesh [mesh name] [texture depth test v])`.</dd>
+					<dd>A: Whether depth buffer is enabled and what comparison mode it is set to is stored for each render target separately. By default, depth writing is disabled. And memory for storing depth of pixels isn't even allocated until depth write is enabled. To better understand this, the following blocks may be useful: `(render target [has depth storage v])`, `(render target [depth write v])`, `(render target [depth test v])`, `(mesh [mesh name] [texture stores depth v])`, `(mesh [mesh name] [texture depth write v])`, `(mesh [mesh name] [texture depth test v])`.</dd>
 
 					<dt>Q: Why are transparent objects blocking other things from being drawn?</dt>
 					<dd>A: == TODO ==</dd>
@@ -587,12 +587,12 @@
 				<dl>
 					<dt>Q: How do I do post processing effects?</dt>
 					<dd>A: You'll either need to:<ul>
-						<li>figure out a way to do them using just the features Simple3D provides (like: rendering multiple copies of the image into itself with offsets to get blur or outlines, rendering with decreased brightness and then amlifying brightness to get visible color banding, etc.)</li>
+						<li>figure out a way to do them using just the features Simple3D provides (like: rendering multiple copies of the image into itself with offsets to get blur or outlines, rendering with decreased brightness and then amplifying brightness to get visible color banding, etc.)</li>
 						<li>use shaded extension by ObviousAlex available on: https://pen-group.github.io/extensions/</li>
 					</ul></dd>
 
 					<dt>Q: Does Simple3D draw on pen layer?</dt>
-					<dd>A: No, it draws on it's own Simple3D layer, which is below the pen layer. Background - Video from camera layer - Simple3D layer - Pen layer - Sprite layer</dd>
+					<dd>A: No, it draws on its own Simple3D layer, which is below the pen layer. Background - Video from camera layer - Simple3D layer - Pen layer - Sprite layer</dd>
 
 					<dt>Q: Can I reorder Simple3D layer? Can I draw Simple3D on top of sprites?</dt>
 					<dd>A: Yes. The best way is to hide the layer and assign one of the sprites to display the contents of Simple3D layer instead.<br>
@@ -627,7 +627,7 @@
 				<h2>Misc</h2>
 				<dl>
 					<dt>Q: What are default values for something?</dt>
-					<dd>A: You can find most of the default values in <a href="https://extensions.turbowarp.org/Xeltalliv/simple3D">block doumentation</a>.</dd>
+					<dd>A: You can find most of the default values in <a href="https://extensions.turbowarp.org/Xeltalliv/simple3D">block documentation</a>.</dd>
 
 					<dt>Q: How to read color of a pixel?</dt>
 					<dd>A: restrict reading area using `set [readback box v] to X1:() Y1:() X2:() Y2:()` and then use `read current render target into [list v]`</dd>
@@ -640,7 +640,7 @@
 
 					<dt>Q: Where can I publish projects that use Simple3D?</dt>
 					<dd>A: There are multiple options:<ul>
-						<li>share.turbowaro.org as a temporary storage for sending project to another person.</li>
+						<li>share.turbowarp.org as a temporary storage for sending project to another person.</li>
 						<li>some Scratch mods support TurboWarp extensions, have accounts and support sharing projects in a publicly discoverable way.</li>
 						<li>you can package the project into html or exe and put it on some game sharing websites.</li>
 					</ul></dd>

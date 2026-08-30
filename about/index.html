@@ -21,13 +21,13 @@
 				<p><a href="https://extensions.turbowarp.org/Xeltalliv/simple3D.js">Simple3D</a> is an extension for <a href="https://turbowarp.org">TurboWarp</a> that provides a graphics API for making visually simple GPU accelerated 3D and 2D projects.
 				By limiting the scope of the extension, the goal is to make it a perfect extension for the projects that need this type of 3D,
 				instead of trying to do a bit of everything poorly. A big part of that is providing features to let (or force) projects to be made in optimized ways,
-				even if they come at an expense of making extension more confusing and difficult to use.
+				even if they come at an expense of making extension more confusing and difficult to use.</p>
 				<p>Design goals:</p>
 				<ul>
 					<li>
 						<p>
 							<strong>Simple3D is only meant for rendering.</strong><br>
-							This means no collison, physics, pathfinding, etc. is supported or will ever be added.
+							This means no collision, physics, pathfinding, etc. is supported or will ever be added.
 							In most cases those things are implemented independently from rendering, using much simpler shapes and different representation in memory, 
 							so there is no reason to tie them to rendering.
 							Simple3D doesn't even store mesh geometry in RAM, only in VRAM, which CPU doesn't have fast access to.
@@ -53,16 +53,16 @@
 							The project that uses extension is responsible for keeping track of all of that.
 							The extension has no clue of where everything is, as the only thing it receives from the project
 							is the constant stream of drawing commands, that it just sequentially executes.
-							Projects don't have to use 3 trasformations in the intended predicatable ways,
+							Projects don't have to use 3 transformations in the intended predictable ways,
 							so Simple3D cannot even determine what type of projection with which settings the project is using.
 							That is why occlusion culling and frustum culling are not done by the extension.
-							It's responsibility of the project and only the project knows neccessary information to perform it.
+							It's the responsibility of the project and only the project knows necessary information to perform it.
 						</p>
 					</li>
 					<li>
 						<p>
 							<strong>Simple3D is also meant for 2D projects and image processing.</strong><br>
-							Despite it's name, it can also just as easily be used to make fully 2D projects
+							Despite its name, it can also just as easily be used to make fully 2D projects
 							with some more advanced rendering effects than what is possible with normal scratch,
 							or processing images by resizing, rotating, cropping, recoloring, combining, cutting out, adding text, etc.
 							For processing images, extension provides ways to import images from URLs, data URIs, lists of pixel colors, costumes
@@ -74,7 +74,7 @@
 				<p>To prevent confusion, referring to this extension as "Simple3D" is preferred over "Simple 3D".</p>
 				<h3>Licensing</h3>
 				<p>Most of the extension is licensed under <a href="https://opensource.org/license/mpl-2-0">Mozilla Public License Version 2.0</a> with the exception of m4 library from webglfundamentals.org, which is licensed under <a href="https://opensource.org/license/bsd-3-clause">BSD 3 Clause license</a>. TL;DR your modified versions of this extension must also be open-source (Gross simplification, go read the full license)</p>
-				<p>Not strictly required, but if you wish to port this extension to other scratch mod, it is preferable that you either maintain it up to date with and functionally close to the original version, retaining original versioning system alongside your own or rename it to something distinct if you wish to take development in a different direction, independant from original.</p>
+				<p>Not strictly required, but if you wish to port this extension to another scratch mod, it is preferable that you either maintain it up to date with and functionally close to the original version, retaining original versioning system alongside your own or rename it to something distinct if you wish to take development in a different direction, independent from original.</p>
 			</div>
 			<footer>
 				<nav><a href="../">&lt; Main page</a></nav>
